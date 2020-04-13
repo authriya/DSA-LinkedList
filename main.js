@@ -303,8 +303,12 @@ function InsertSort(list) {
 
     while(current !== null) {
         next = current.next
-    }
 
+        result = SortedInsert(result, current);
+
+        current = next
+    }
+    return result
 }
 
 
